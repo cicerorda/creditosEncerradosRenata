@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1649,25255" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1649,23996" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -100,13 +100,13 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1659,25190" sap2010:WorkflowViewState.IdRef="Sequence_40">
+  <Sequence sap:VirtualizedContainerService.HintSize="1659,23611" sap2010:WorkflowViewState.IdRef="Sequence_40">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="[&quot;*&quot;+now.ToString(&quot;ddMMyyyy&quot;)+&quot;*&quot;]" Folder="\\nas01\consorcio\publico\Administradora de Consórcios\Controles Internos\IV - Estrutura Operacional\Área Técnica\Automação RPA\RPA PlanilhaCreditoMarcelo" sap:VirtualizedContainerService.HintSize="1597,25079" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="[&quot;*&quot;+now.ToString(&quot;ddMMyyyy&quot;)+&quot;*&quot;]" Folder="\\nas01\consorcio\publico\Administradora de Consórcios\Controles Internos\IV - Estrutura Operacional\Área Técnica\Automação RPA\RPA PlanilhaCreditoMarcelo" sap:VirtualizedContainerService.HintSize="1597,23500" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -115,13 +115,13 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1563,24821" sap2010:WorkflowViewState.IdRef="Sequence_39">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1563,23242" sap2010:WorkflowViewState.IdRef="Sequence_39">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1501,24710" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1501,23131" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="Grupo" />
                 <Variable x:TypeArguments="x:String" Name="strdirPath" />
@@ -151,7 +151,7 @@
                   </InArgument>
                 </ui:ReadRange.Range>
               </ui:ReadRange>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1439,23556" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1439,21977" sap2010:WorkflowViewState.IdRef="TryCatch_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -159,13 +159,13 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <TryCatch.Try>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_dados]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1401,23328" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_dados]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1401,21749" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
                         </ActivityAction.Argument>
-                        <Sequence sap:VirtualizedContainerService.HintSize="1367,23213" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <Sequence sap:VirtualizedContainerService.HintSize="1367,21634" sap2010:WorkflowViewState.IdRef="Sequence_10">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="CPF" />
                             <Variable x:TypeArguments="x:String" Name="Agencia" />
@@ -289,13 +289,13 @@
                             </Assign.Value>
                           </Assign>
                           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1305,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Tipo: &quot;+Tipo]" />
-                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: NewCon" sap:VirtualizedContainerService.HintSize="1305,21265" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: NewCon" sap:VirtualizedContainerService.HintSize="1305,19686" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1271,20975" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1271,19396" sap2010:WorkflowViewState.IdRef="Sequence_2">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="situacao" />
                                     <Variable x:TypeArguments="x:String" Name="RetornoErro" />
@@ -305,16 +305,16 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1209,872" sap2010:WorkflowViewState.IdRef="RetryScope_3" NumberOfRetries="5">
+                                  <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1209,667" sap2010:WorkflowViewState.IdRef="RetryScope_3" NumberOfRetries="5">
                                     <ui:RetryScope.ActivityBody>
                                       <ActivityAction>
-                                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="496,697" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="496,492" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,389" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                                             <TryCatch.Try>
                                               <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Credito'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Timeout="10" Version="V3">
                                                 <uix:NClick.Target>
@@ -323,10 +323,10 @@
                                               </uix:NClick>
                                             </TryCatch.Try>
                                             <TryCatch.Catches>
-                                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,226" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
@@ -371,7 +371,7 @@
                                       <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,538" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
@@ -581,13 +581,13 @@
                                   <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1209,1197" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5">
                                     <ui:RetryScope.ActivityBody>
                                       <ActivityAction>
-                                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="546,1022" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="566,1022" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Solicitação de Pagamento de Bem - 07/09/2023  08:21:13" sap:VirtualizedContainerService.HintSize="484,395" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="e11932d6-c2fa-481e-aa35-b060b08f5526" Version="V2">
+                                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Solicitação de Pagamento de Bem - 07/09/2023  08:21:13" sap:VirtualizedContainerService.HintSize="504,395" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="e11932d6-c2fa-481e-aa35-b060b08f5526" Version="V2">
                                             <uix:NApplicationCard.Body>
                                               <ActivityAction x:TypeArguments="x:Object">
                                                 <ActivityAction.Argument>
@@ -606,17 +606,17 @@
                                               <uix:TargetApp Area="278, 88, 810, 637" FilePath="C:\Newcon4_Funcional\cnp3.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANdSURBVFhHvZdLSBVRGMfz+tZKJYTCqBYZCS16aBAUWGTaJgrcCFFhcKlNbSIIghZdqE2baBFuClxEQRGZYERQ0AOsKHtIiwqCoJdKRWUP037/mW+8c++dmXsRb3/4cc/5vu/M/M/MmTlzZ2QoniiDPrjzH+izs/oUT1TAMEz8B0bsrD4lDYzBRejKA70wDpEGRmEllOaBTZCTgRUWnV7FEy0wNQMFTVuqoBGWWihS1BVCPayFIic4FQMMFqvhKryCnZYKFTW1cBSewyUocRJTNNAAb2ECbkO1pQJFvgy6YRxGoQXcZJABkgVOI8AAuRI4BzrYT+hwaiNEzTb4CjLcC8WWyjRAshoanE7SwCDUWV6X/gfoYDehxqkNEfkiuGX1X6DNUq4CDOyCTqfjGhiBOBQQnwmXQQfT7DeDxjiky+Id8As0Rleu0NKu/AZIVsBd2G3JShiAWnWJb4TvoINdg1kgY6sgeVlNxMrhHqh+GNZbKqk0A50gt56B2dAOOolOpvung41Bs0r4rYPz4AzxpD5o9qoXZ8Bd+X6lGXhkxZ6BGJSqSWwrfAMtvh7QYpSxffDAqfeJmB47b/ZD0GSpVKUZ8Ny6Bkz0dWtuWE6PUTMortk/gYdWOiliWkt/QWO6wJlIhnI0sB28lX8BYqDZHwadJMUAfRnzruYILLFUprIZoF0K/oW0weKV8MzikwZoi73wB3S7ToH72g1SlAF+NUtdyt8WPwsxy9XAG4v7DcyHQYvr3i+wVLCyGNDK9y7le1jjDEK0wwwcAs1et+aEhcMVZgDU3+GLaSFNPuu0MwzwOxe0OSmmvWKxUxylCAPzYMD672CZDXFEP9VArEixBOgdIY6Au6dEKcLAHtAiUv8kpLzp6KcYgDnw0fovod5KoxVi4CA8tvYnWGjlkyLmN3Afjllbpg9YWXaFGHgN3mN0HFI3EETMb0DPujf7p7DIyrIrxIDHB3C24XQR9xvwsx+y33tPaQa0X4vPoJdMO6ioEFJeJsT13aDPK2+MFuppqLKS3JRmoM1oBX12eV9GyyHlkSJXDNoTvDH60Cy3dO7yGwiUuyNegUaLTK8iDcQTYh0MQSOU54FWCDVQBD2gv2b6C9WdB65DqAHvozToz+R0E2hAl6gfXuSfRP8/Z7Zo0l9+oawAAAAASUVORK5CYII=" InformativeScreenshot="4acae84cccf5b29ba8f25c01409d1884.png" Selector="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcPagamento' title='Solicitação de Pagamento de Bem - 07/09/2023  08:21:13' /&gt;" Title="Solicitação de Pagamento de Bem - 07/09/2023  08:21:13" />
                                             </uix:NApplicationCard.TargetApp>
                                           </uix:NApplicationCard>
-                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Localizar...'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V3">
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Localizar...'" sap:VirtualizedContainerService.HintSize="504,157" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V3">
                                             <uix:NClick.Target>
                                               <uix:TargetAnchorable CvElementArea="148, 114, 81, 22" CvTextArea="162, 119, 53, 11" CvTextArgument="Localizar..." CvType="Button" DesignTimeRectangle="146, 112, 86, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Localizar...'" FullSelectorArgument="&lt;wnd cls='TTabSheet' title='tshLocalizaConsorciado' /&gt;&lt;wnd cls='TButton' title='Localizar...' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TTabSheet' title='tshLocalizaConsorciado' /&gt;&lt;wnd cls='TButton' title='Localizar...' check:text='Localizar...' /&gt;" Guid="2d38f5cf-79e8-42dd-9901-105b3d926f60" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFYAAAAaCAYAAAAtzKvgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFDSURBVGhD7ZWBrYQgDIbZiW1YhlVYwCEYxUl6FKkWD8/37vzNXdImX0KwP4RPjI6sIGViQWViQdWJnabJ+ABdT2LneTbewMSCMLEgTCwIEwsCIzZH8j5SHj27Alkfvc8H/LbY0bMv4XaxOXpyzlV8zNszzrR55wKlQb8LaevtbmyisGYXZO3jfKDgeX7b60ruFVvlyUFYhqeY9+MmgyV063BPy8r8cJ/SJ3Ov8mo/BPeKTWG7NYUUHIVUxkf9TJUgN7HJkP6nnJL3l7zuu5jvFsv9oxsu/V0uU/S7W3iWlz4A94rl+dFBu3GBhXBev4gq6Vjs+pLq2o2zvO69GJzY9fNrtAPqn0knosto+ZIvPxvJ7MVWaZJdWH5eJ/l1D73faPx/MGINE4vCxIIwsSBMLIhTscb76OrEWl1XJhZUJhZSRA8bAgtSc2ySmQAAAABJRU5ErkJggg==" InformativeScreenshot="5183bce85e2fa0058e423edd06bd1066.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcPagamento' title='Solicitação de Pagamento de Bem - 09/08/2023  08:36:10' /&gt;" SearchSteps="Image" Version="V2" Visibility="Visible" WaitForReadyArgument="Complete" />
                                             </uix:NClick.Target>
                                           </uix:NClick>
-                                          <uix:NGetText DisplayName="Get Text 'TPanel'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" TextString="[valorPagamento]" Version="V3">
+                                          <uix:NGetText DisplayName="Get Text 'TPanel'" sap:VirtualizedContainerService.HintSize="504,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" TextString="[valorPagamento]" Version="V3">
                                             <uix:NGetText.Target>
                                               <uix:TargetAnchorable DesignTimeRectangle="23, 492, 766, 20" DesignTimeScaleFactor="1" FriendlyName="'TPanel'" FullSelectorArgument="&lt;wnd cls='TTabSheet' title='tshAcao' /&gt;&lt;wnd cls='TPanel' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TTabSheet' title='tshAcao' /&gt;&lt;wnd cls='TPanel' /&gt;" Guid="1b5bda37-7fc7-4a89-b373-1d4376738818" InformativeScreenshot="6d469ca42864d38da40a47a9ab9dd32e.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcPagamento' title='Solicitação de Pagamento de Bem - 18/07/2023  12:56:47' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
                                             </uix:NGetText.Target>
                                           </uix:NGetText>
-                                          <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                          <Assign sap:VirtualizedContainerService.HintSize="504,82" sap2010:WorkflowViewState.IdRef="Assign_1">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[valorPagamento]</OutArgument>
                                             </Assign.To>
@@ -637,7 +637,7 @@
                                       <uix:TargetAnchorable DesignTimeRectangle="43, 535, 77, 20" DesignTimeScaleFactor="1" FriendlyName="'cnp3.exe Solicitação'" Guid="6585ff25-f938-4cdb-af57-a66a49a0720d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAUCAYAAADIiLCPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF6SURBVFhH7ZaNbQMhDIWZywN5HqZhmRvGBWwD51AKpInaiCehhB/D84cvF0dHyzrQNnSgbehA29CBtqEDbUMH2obG0C5P4Bw5DNwPSM4B+Yu7r1MgTOe2DTw9dWzKRfN4UnPQHMY0ot4MDfQg8VH6y7rIQ8zjndAAgPJ5Flru12pgT9ag6XdjrAw0rTxZHLDGtxV4eaj7Ip+DQc6366d89DUFDb2UdgvN3r6YyIfn71KdknAeH8XcNKi0FHNLXPyYvRQs983FTfvoaw5a3CxgNOerSb5VBZPUJtqAyoZ43TimFY+nREprMxJfOpemHva+gbhDm/fR1zS0ZCI9pnPQ0nI2mT51bBVaLwne47G6/iY02Xj8eMqc9gEJI+gy9lNM0fdJ8GPHCXPy9VIrJF3Xhzbvo68FaGrEgInz2nQdS4zavwrDGNXg5sVTjo8/9u06hZj3LS+CPFUgvv5F8J+1WD0r+hxobQVK61bqL+hzK+2FOtA2dKAti+gLUUXYi8nC/pQAAAAASUVORK5CYII=" InformativeScreenshot="091a5595c7abb56174bfb6b0a2d8ed3a.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcPagamento' title='Solicitação de Pagamento de Bem - 18/07/2023  12:56:47' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <If Condition="[valorPagamento = &quot;0,00&quot;]" sap:VirtualizedContainerService.HintSize="1209,12401" sap2010:WorkflowViewState.IdRef="If_1">
+                                  <If Condition="[valorPagamento = &quot;0,00&quot;]" sap:VirtualizedContainerService.HintSize="1209,11027" sap2010:WorkflowViewState.IdRef="If_1">
                                     <If.Then>
                                       <Sequence sap:VirtualizedContainerService.HintSize="450,1089" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                         <sap:WorkflowViewStateService.ViewState>
@@ -666,7 +666,7 @@
                                       </Sequence>
                                     </If.Then>
                                     <If.Else>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="714,12241" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="714,10867" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -734,7 +734,7 @@
                                             <InArgument x:TypeArguments="x:String">[valorPagamento.Replace(".","")]</InArgument>
                                           </Assign.Value>
                                         </Assign>
-                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="652,1187" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="652,445" sap2010:WorkflowViewState.IdRef="TryCatch_9">
                                           <TryCatch.Try>
                                             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '0,00'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="HardwareEvents" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Text="[valorPagamento]" Version="V3">
                                               <uix:NTypeInto.Target>
@@ -743,7 +743,7 @@
                                             </uix:NTypeInto>
                                           </TryCatch.Try>
                                           <TryCatch.Catches>
-                                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,1024" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_9">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -754,7 +754,7 @@
                                                 <ActivityAction.Argument>
                                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                 </ActivityAction.Argument>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="450,955" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="450,957" sap2010:WorkflowViewState.IdRef="Sequence_41">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -923,7 +923,7 @@
                                             <uix:TargetAnchorable CvElementArea="626, 608, 71, 22" CvTextArea="643, 613, 36, 11" CvTextArgument="Gravar" CvType="Button" DesignTimeRectangle="626, 608, 71, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Gravar'" FullSelectorArgument="&lt;wnd cls='TTabSheet' title='tshOutros' /&gt;&lt;wnd cls='TButton' title='Gravar' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TTabSheet' title='tshOutros' /&gt;&lt;wnd cls='TButton' title='Gravar' check:text='Gravar' /&gt;" Guid="2678da27-a129-49b6-b253-397bba893058" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAaCAYAAAD/nKG4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEuSURBVFhH7ZThDYQgDEbdiW26DKuwgEMwipP0AEWLgmfvTqOXr8n7IX6Q9KXQMepwQZaiIEtRhay+78EKWRtZwzCACchSAFkKIEsBZCm4SJZnazruuoxh62u5e3OBrFGUsX5ZcxSEEbsid3/OlxXFGMt+te5omi5v2RhiSpM3CvTWLFNILuXjmhQuv2v52rl576ecLmvd5IbYlLyWqcks1zHlRov1OK1SdiP/4+t+uSxH0wQEyIW1otmJ1GjOLQ0X05gnqJWvnfslp8tqX8OGrOI9i5MipiP+C5LmvXv5R8qqPfCpqR1ZeWqSCCEr7kvvkHiDWvlnyhqR12++gvHfpqlRZMpRECOz+Rx5BVv5J8v6ByBLAWQpgCwFkKXgrSxQIquQhdovyFIUZB0u5hcs7jp1S5XG9AAAAABJRU5ErkJggg==" InformativeScreenshot="3145d2754af6395f3233738785bfc842.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcPagamento' title='Solicitação de Pagamento de Bem - 27/07/2023  10:44:03' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
                                           </uix:NClick.Target>
                                         </uix:NClick>
-                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="652,1149" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="652,385" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                                           <TryCatch.Try>
                                             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Adicionar...'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V3">
                                               <uix:NClick.Target>
@@ -932,7 +932,7 @@
                                             </uix:NClick>
                                           </TryCatch.Try>
                                           <TryCatch.Catches>
-                                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,986" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -943,18 +943,18 @@
                                                 <ActivityAction.Argument>
                                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                 </ActivityAction.Argument>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="496,917" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="552,2058" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V3">
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="490,157" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V3">
                                                     <uix:NClick.Target>
                                                       <uix:TargetAnchorable CvElementArea="234, 135, 87, 25" CvTextArea="269, 141, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="234, 135, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='2' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='OK' check:text='unchecked' /&gt;" Guid="ec6d628d-f8de-4bff-9797-606543dab611" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEYSURBVGhD7dbBEYMgEIVheqIbKsmNVmiFKnK2AzrYiGhkxcyYUVd25h3+A7qnT0RNSomQXAAXDuDCMXDzeqMbYsZssTOMzseM2WIeGIYBXRDAhQO4cAAXDuDC6QQPjowx36yP1f1AzljycVlH8nacc6GaeS594BN2C7qic/Dgtg/k2ZSBF1wXNtejJ2schWm9gkdvu9nZS7rAGWxdfhDLrp7B/fgmWE+xmX02feC7iPXOz+DlbG/ehA7SB350h4c8u1zrJ13gf57h5QO794CeSxn4WINYjpBffynTh7Ojs1wfeG7zH853PAfP5V/DXtB1gisO4MIBXDiACwdw4QAu3GFwdG3MmC12htH5mHG9QPcHcOEALlqiDyd/APL6OyhdAAAAAElFTkSuQmCC" InformativeScreenshot="9ba79a152d0865c9486135697166c97a.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='#32770' title='Aviso' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
                                                     </uix:NClick.Target>
                                                   </uix:NClick>
-                                                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="490,1124" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                                                     <TryCatch.Try>
                                                       <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Keyboard Shortcuts 'TDBLookupComboBox'" sap:VirtualizedContainerService.HintSize="334,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
                                                         <uix:NKeyboardShortcuts.Target>
@@ -963,7 +963,7 @@
                                                       </uix:NKeyboardShortcuts>
                                                     </TryCatch.Try>
                                                     <TryCatch.Catches>
-                                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,961" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -998,7 +998,7 @@
                                                       </Catch>
                                                     </TryCatch.Catches>
                                                   </TryCatch>
-                                                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                                                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="490,385" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                                                     <TryCatch.Try>
                                                       <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Gravar'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V3">
                                                         <uix:NClick.Target>
@@ -1007,7 +1007,7 @@
                                                       </uix:NClick>
                                                     </TryCatch.Try>
                                                     <TryCatch.Catches>
-                                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1018,7 +1018,7 @@
                                                           <ActivityAction.Argument>
                                                             <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                           </ActivityAction.Argument>
-                                                          <Sequence sap:VirtualizedContainerService.HintSize="450,366" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="450,346" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1031,7 +1031,7 @@
                                                       </Catch>
                                                     </TryCatch.Catches>
                                                   </TryCatch>
-                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Adicionar...'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V3">
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Adicionar...'" sap:VirtualizedContainerService.HintSize="490,157" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Version="V3">
                                                     <uix:NClick.Target>
                                                       <uix:TargetAnchorable CvElementArea="662, 188, 119, 21" CvTextArea="692, 193, 56, 11" CvTextArgument="Adicionar..." CvType="Button" DesignTimeRectangle="662, 188, 119, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Adicionar...'" FullSelectorArgument="&lt;wnd cls='TTabSheet' title='tshFavorecido' /&gt;&lt;wnd cls='TButton' title='Adicionar...' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TTabSheet' title='tshFavorecido' /&gt;&lt;wnd cls='TButton' title='Adicionar...' check:text='Adicionar...' /&gt;" Guid="f4422e37-c1ac-4557-b44d-40975c47a21e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAAaCAYAAACXbyOAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVGhD7ZbbbQQhDEXpiW6oJH+0QitUke+txMGeYXJ55CFllWWwLR1pZMOw8gF2HFmoCZOtKEy2omhku7d3YzMwTPbmYExlPx4P4+aYbEWYbEWYbEXcRnYKjnzM09pBpugdhVSecyTvI+XpuMJP9U25h2yWE2KRGSjN6gLIntaNW8jmU80Sc/SDTM4558iVjRBmJ5ufuS6cmwXq1/zCdXPI5irvq/NCGtfDvLzvWP9aY0FuIDuVpo+SpCYioVYEtLJ5rqeYj/EiigXVOs7HsUN+tn6Xh3VWZXnZLAj/q+sp/7aGMnFzVGo+hebUDvMlz38PIFLEnicbN8dsncVYXDafntpY4Gzsv8vm8V/dBLN1FmNt2Z2MA2g+N7lpfi8LhNT3cb7Wh/kzeZ3s+ntEvMl+EtzkKqIDmv75wVRO+R8/0GRuV2+vcbhpzg+48SbgMbiBZs+vYWHZxrMx2Yow2Yow2Yr4tWxjHzBM9uZgNLIt9g6TrShMtpog+gDEzqYS66obXgAAAABJRU5ErkJggg==" InformativeScreenshot="e1d14d0093184c5f843b0495473bea58.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcPagamento' title='Solicitação de Pagamento de Bem - 27/07/2023  10:44:03' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                                     </uix:NClick.Target>
@@ -1120,6 +1120,7 @@
                                             <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="130, 141, 46, 22" DesignTimeScaleFactor="1" FriendlyName="'___'" FullSelectorArgument="&lt;wnd cls='TTabSheet' title='tshBasico' /&gt;&lt;wnd cls='TEditPlusButton' idx='2' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TTabSheet' title='tshBasico' /&gt;&lt;wnd cls='TEditPlusButton' check:text='___' /&gt;" Guid="81eaf230-4e0c-4767-a2db-655fcccd7bb0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAaCAYAAAD1wA/qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABvSURBVFhHY/jw4cP/4YCHn0cYKq4PSYzVI0MNjByPGM+kDj6TxgA1kTZg1COk4lGPEAlGPUIqHvUIkWDUI6TiUY8QCUY9QioecI88hNKUgviQ0RghChD0yFABox4ZbGD4e2QoYgyPDHU8TDzy4T8AuTL67XIvgAIAAAAASUVORK5CYII=" InformativeScreenshot="d73420df01ef8341236cd3c9ec6bb64d.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCmPrcPagamentoEletronico' title='Informações Bancárias - 05/09/2023  12:13:25' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                                           </uix:NTypeInto.Target>
                                         </uix:NTypeInto>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="652,92" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Trace" Message="[&quot;Banco - &quot;+Banco]" />
                                         <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEdit'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="652,217" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="1944e36a-ce01-415d-845e-c81c13d17cb2" Text="[Agencia]" Version="V3">
                                           <uix:NTypeInto.Target>
                                             <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="130, 194, 68, 22" DesignTimeScaleFactor="1" FriendlyName="'TEdit'" FullSelectorArgument="&lt;wnd cls='TTabSheet' title='tshBasico' /&gt;&lt;wnd cls='TEdit' idx='4' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TTabSheet' title='tshBasico' /&gt;&lt;wnd cls='TEdit' /&gt;" Guid="17ccd53f-7760-4684-9e3b-8b38bfbabe15" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAaCAYAAAAUqxq7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABcSURBVFhH7dDbCYAwAMBA5+7U3aB+CCr4yAIXyAK3zTmXvwcUn0BjDN9+BdIRoAhQBCgCFAGKAEWAIkARoAhQBCgCFAGKAEWAIkARoAhQBCj6BPL1A8jvA/p9rh2fFM/u68HqZAAAAABJRU5ErkJggg==" InformativeScreenshot="002632953fe68461c51c5b04203b68f4.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCmPrcPagamentoEletronico' title='Informações Bancárias - 05/09/2023  12:13:25' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
@@ -1149,7 +1150,7 @@
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <If Condition="[Banco = &quot;133&quot; or Banco = &quot;085&quot;]" sap:VirtualizedContainerService.HintSize="548,847" sap2010:WorkflowViewState.IdRef="If_2">
+                                                <If Condition="[Banco &lt;&gt; &quot;748&quot;]" sap:VirtualizedContainerService.HintSize="548,847" sap2010:WorkflowViewState.IdRef="If_2">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
